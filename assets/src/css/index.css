@@ -1,0 +1,137 @@
+:root {
+    --text-clr: #F8F9FC;
+    --header-clr: #7B86AA;
+    --buttonOff: #BFC8EA;
+    --buttonOn: #5B67A2;
+    --card-border: #545051;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5.61rem;
+}
+
+h2 {
+    font-size: 4.209rem;
+}
+
+h3 {
+    font-size: 3.157rem;
+}
+
+h4 {
+    font-size: 2.369rem;
+}
+
+h5 {
+    font-size: 1.777rem;
+}
+
+h6 {
+    font-size: 1.333rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+
+
+@import url('https://fonts.bunny.net/css?family=Roboto:400&display=swap');
+
+
+body {
+    background-color: var(--text-clr);
+
+    .hero-section {
+        width: 100vw;
+        height: 60vh;
+        background-image: url(/Hayjet-Heilpraktikerin/assets/src/img/hero/hero-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .hero-headline,
+        .subtitle {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .hero-cta-btn {
+            padding: 1.2rem;
+            background-color: var(--buttonOff);
+            border: none;
+            position: static;
+            left: 60rem;
+            top: 90;
+
+            &:hover {
+                cursor: pointer;
+                border-radius: 8px;
+                background-color: var(--buttonOn);
+                border: 1px solid gray
+            }
+        }
+    }
+
+    header {
+        width: 100vw;
+        height: 4.5rem;
+        background-color: var(--header-clr);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .nav-logo {
+            width: 6rem;
+
+        }
+    }
+
+    nav {
+        padding: 0;
+
+        ul {
+            display: flex;
+            gap: .3rem;
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                border: 1px solid rgba(0, 0, 0, 0.432);
+                padding: 1rem;
+                margin-right: .9rem;
+                color: var(--link-clr);
+                font-weight: bold;
+                background-color: var(--buttonOff);
+
+                &:hover {
+                    background-color: var(--btnOn);
+                    transition: all 280ms;
+                    border-radius: 8px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .card-section {
+        width: 100vw;
+        height: 50vh;
+        background-color: red;
+    }
+}
